@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NACCS League - Registration</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NACCS League - Registration</h1>
+  </header>
+
+  <nav>
+    <a href="naccsindex.html">Home</a>
+    <a href="naccsregistration.html">Registration</a>
+    <a href="naccsabout.html">About</a>
+  </nav>
+
+  <section>
+    <h2>Registration Form</h2>
+    <p>Fill out the form below to register for the NACCS League:</p>
+
+    <form action="process_registration.php" method="post">
+      <label for="teamName">Team Name:</label>
+      <input type="text" id="teamName" name="teamName" required>
+
+      <label for="captainName">Captain's Name:</label>
+      <input type="text" id="captainName" name="captainName" required>
+      <label for="captainAge">Captain's Age:</label>
+      <input type="number" id="captainAge" name="captainAge" required>
+      <label for="captainCountry">Captain's Country:</label>
+      <select id="captainCountry" name="captainCountry" required>
+        <option value="United States">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+
+      <label for="member1Name">Member 1 Name:</label>
+      <input type="text" id="member1Name" name="member1Name" required>
+      <label for="member1Age">Member 1 Age:</label>
+      <input type="number" id="member1Age" name="member1Age" required>
+      <label for="member1Country">Member 1 Country:</label>
+      <select id="member1Country" name="member1Country" required>
+        <option value="United States">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+
+      <label for="member2Name">Member 2 Name:</label>
+      <input type="text" id="member2Name" name="member2Name" required>
+      <label for="member2Age">Member 2 Age:</label>
+      <input type="number" id="member2Age" name="member2Age" required>
+      <label for="member2Country">Member 2 Country:</label>
+      <select id="member2Country" name="member2Country" required>
+        <option value="United States">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+
+      <label for="member3Name">Member 3 Name:</label>
+      <input type="text" id="member3Name" name="member3Name" required>
+      <label for="member3Age">Member 3 Age:</label>
+      <input type="number" id="member3Age" name="member3Age" required>
+      <label for="member3Country">Member 3 Country:</label>
+      <select id="member3Country" name="member3Country" required>
+        <option value="United States">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+
+      <label for="member4Name">Member 4 Name:</label>
+      <input type="text" id="member4Name" name="member4Name" required>
+      <label for="member4Age">Member 4 Age:</label>
+      <input type="number" id="member4Age" name="member4Age" required>
+      <label for="member4Country">Member 4 Country:</label>
+      <select id="member4Country" name="member4Country" required>
+        <option value="United States">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+
+      <label for="email">Captain's Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 NACCS League. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
